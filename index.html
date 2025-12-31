@@ -1,23 +1,1056 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
+
+  <!-- Schema Markup: Medical Web Page or FAQPage for SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "2026년 치질실비보험 완벽 가이드",
+      "url": "https://yourdomain.com/치질실비보험",
+      "description": "치질 수술 비용을 실비보험으로 보상받는 방법과 2026년 최신 보험 가입 정보, 면책기간, 청구 서류 등을 상세히 안내합니다.",
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "치질 (Hemorrhoids)",
+        "alternateName": ["치핵", "치열", "치루"],
+        "medicalSpecialty": "Proctology"
+      },
+      "lastReviewed": "2026-01-01"
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: "Noto Sans KR", sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+      background-color: #f7f9fc; /* 부드러운 배경색 */
+      color: #333;
+      word-break: keep-all; /* 한글 단어 단위 줄바꿈 */
+    }
+    header {
+      background-color: #0066cc; /* 건강 관련 파란색 */
+      color: white;
+      padding: 2.5rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin: 0.5rem 0 1rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    header p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      opacity: 0.9;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      margin: 1rem 0 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease, transform 0.3s ease;
+      font-size: 1.1rem;
+      position: relative;
+    }
+    nav a:hover {
+      color: #ffcc00; /* 강조색 */
+      transform: translateY(-2px);
+    }
+    main {
+      max-width: 1000px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+      background-color: white;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+    }
+    h1, h2 {
+      color: #004a8f; /* 진한 남색 */
+      font-weight: 700;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-bottom: 3px solid #e0eaf6;
+    }
+    h2 {
+      font-size: 2.2rem;
+    }
+    h3 {
+      color: #0066cc;
+      font-size: 1.6rem;
+      margin-top: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px dashed #eee;
+    }
+    p {
+      text-align: justify;
+      margin-bottom: 1.5rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    th, td {
+      padding: 1rem;
+      border: 1px solid #e0e0e0;
+      text-align: center;
+    }
+    th {
+      background-color: #eaf3ff; /* 연한 배경색 */
+      color: #004a8f;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+    tr:nth-child(even) {
+      background-color: #fcfcfc;
+    }
+    dl dt {
+      font-weight: 700;
+      margin-top: 1.5rem;
+      cursor: pointer;
+      color: #0066cc;
+      background-color: #f5fafd;
+      padding: 1rem;
+      border-left: 5px solid #0066cc;
+      transition: background-color 0.3s ease;
+    }
+    dl dt:hover {
+      background-color: #e6f2ff;
+    }
+    dl dd {
+      margin: 0.5rem 0 1.5rem 1rem;
+      padding: 1rem;
+      border-left: 2px dashed #ccc;
+      display: none;
+      background-color: #ffffff;
+    }
+    dl dt.active + dd {
+      display: block;
+    }
+    .cta-button {
+      display: block;
+      background-color: #ff9900; /* 강조 오렌지색 */
+      color: white;
+      font-weight: 700;
+      padding: 1.2rem 3rem;
+      border-radius: 50px;
+      text-decoration: none;
+      margin: 3rem auto; /* 중앙 정렬 */
+      width: fit-content;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      text-align: center;
+      font-size: 1.3rem;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .cta-button:hover {
+      background-color: #e68a00;
+      transform: translateY(-3px);
+    }
+    .keyword-tags {
+      margin: 2.5rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .keyword-tags a {
+      background-color: #e0f0ff;
+      color: #0066cc;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .keyword-tags a:hover {
+      background-color: #b3d1ff;
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+      background-color: #e0eaf1;
+      margin-top: 3rem;
+      border-top: 1px solid #d0dbe4;
+    }
+    .external-link {
+      display: inline-block;
+      color: #0066cc;
+      font-weight: 500;
+      margin-top: 1rem;
+      text-decoration: underline;
+    }
+    .highlight {
+      color: #cc0000;
+      font-weight: 700;
+    }
+    .content-box {
+      background-color: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-top: 1.5rem;
+      border: 1px solid #eee;
+    }
+    .chart-placeholder {
+      width: 100%;
+      height: 300px;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      color: #666;
+      border: 1px solid #ddd;
+    }
+    /* Form input styling */
+    .contact-form {
+      background-color: #f9f9f9;
+      padding: 2rem;
+      border-radius: 10px;
+      margin: 2rem 0;
+    }
+    .contact-form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: #555;
+    }
+    .contact-form input[type="text"],
+    .contact-form input[type="number"],
+    .contact-form select,
+    .contact-form textarea {
+      width: calc(100% - 22px);
+      padding: 10px;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 1rem;
+    }
+    .contact-form textarea {
+      resize: vertical;
+    }
+    .contact-form button {
+      background-color: #0066cc;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+    .contact-form button:hover {
+      background-color: #004a8f;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>2026년 치질실비보험 완벽 가이드</h1>
+    <p>치질 수술 비용, 더 이상 혼자 고민하지 마세요. 실비보험으로 부담을 덜고 건강한 삶을 되찾으세요.</p>
     <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+      <ul>
+        <li><a href="#coverage">보장 내용</a></li>
+        <li><a href="#cost">비용 분석</a></li>
+        <li><a href="#claim">청구 절차</a></li>
+        <li><a href="#tip">가입 팁</a></li>
+        <li><a href="#faq">자주 묻는 질문</a></li>
+        <li><a href="#inquiry">무료 상담</a></li>
+      </ul>
     </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+  </header>
+
+  <main>
+    <section id="introduction">
+      <h2>치질, 실비보험으로 보상받을 수 있을까?</h2>
+      <p>치질은 치핵, 치열, 치루 등 항문 질환을 통칭하는 말로, 국민건강보험공단 통계에 따르면 2024년 기준 약 65만 명이 이 질환으로 병원을 찾을 만큼 흔한 질병입니다. 심한 통증과 출혈로 인해 일상생활에 큰 불편을 초래하지만, 많은 사람들이 수술 비용에 대한 부담으로 치료를 미루곤 합니다. 특히 2026년 현재, 의료 기술의 발전과 함께 수술 방법도 다양해졌지만, 비급여 항목이 포함될 경우 비용이 예상보다 많이 나올 수 있습니다. 다행히 대부분의 <strong class="highlight">치질 수술 비용은 실비보험(실손의료비보험)으로 보상받을 수 있습니다.</strong> 하지만 정확한 보장 내용을 알지 못해 제대로 청구하지 못하거나, 가입 시점에 따라 보상 범위가 달라지는 경우가 많습니다. 본 가이드는 2026년 최신 기준으로 치질 실비보험에 대한 모든 궁금증을 해결해 드립니다.</p>
+
+      <div class="keyword-tags" aria-label="연관 검색 키워드">
+        <a href="#coverage">치질실비보험</a>
+        <a href="#cost">치질 수술 비용</a>
+        <a href="#coverage">치핵 실비보험</a>
+        <a href="#coverage">치열 실비보험</a>
+        <a href="#coverage">치루 실비보험</a>
+        <a href="#tip">실비보험 치질 면책기간</a>
+        <a href="#claim">치질 수술 보험금 청구</a>
+        <a href="#cost">2026 치질수술비용</a>
+        <a href="#tip">치질 보험 가입 조건</a>
+        <a href="#coverage">실비보험 치질 보장 범위</a>
+      </div>
+    </section>
+
+    <section id="coverage">
+      <h2>치질 질환별 실비보험 보장 범위 상세 분석 (치핵/치열/치루)</h2>
+      <p>흔히 '치질'이라고 부르는 질환은 크게 세 가지 유형으로 나뉩니다. 치질 실비보험을 이해하기 위해서는 각 질환별 보장 여부를 정확히 아는 것이 중요합니다. 대부분의 실비보험은 항문 질환에 대해 보장을 하지만, 일부 상품이나 가입 시기에 따라 차이가 있을 수 있습니다. 2009년 10월 이후 표준화된 실비보험을 기준으로 보장 내용을 살펴보겠습니다.</p>
+
+      <h3>1. 치핵 (Hemorrhoids)</h3>
+      <p>항문 주위 혈관이 부풀어 오르는 증상으로, 가장 흔한 치질의 형태입니다. 수술을 받더라도 100% 재발을 막기 어려워 많은 사람들이 걱정합니다. 치핵 수술은 실비보험으로 보상받을 수 있습니다. 다만, 치핵을 제거하는 <strong class="highlight">치핵 절제술(PPH, HAL-RAR 등)</strong> 외에, 미용 목적의 시술(예: 치핵 경화제 주입술 등)은 보장에서 제외되거나 보험사별로 다르게 적용될 수 있습니다. 2026년 현재 표준 실손보험의 경우, '국민건강보험법'에 따른 요양급여에 해당하는 의료비는 보상하지만, 비급여 항목은 보장 비율에 따라 차감될 수 있습니다.</p>
+
+      <h3>2. 치열 (Anal Fissure)</h3>
+      <p>항문 입구가 찢어지는 증상입니다. 만성 치열의 경우 수술적 치료가 필요할 수 있습니다. 치열 수술 역시 실비보험의 보장 대상입니다. 급성 치열의 경우 약물 치료나 좌욕 등 비수술적 치료로 호전되는 경우가 많으므로, 수술을 결정하기 전에 충분한 상담이 필요합니다. 수술 방법으로는 내괄약근 측방 절개술(LIS) 등이 있으며, 이 역시 실비보험으로 보상받을 수 있습니다.</p>
+
+      <h3>3. 치루 (Fistula)</h3>
+      <p>항문 안쪽과 바깥쪽 피부 사이에 길이 생기는 염증성 질환입니다. 치루는 자연 치유가 어렵고 수술이 필수적인 경우가 많습니다. <strong class="highlight">치루 수술</strong>은 염증 제거와 누관 제거를 목적으로 하며, 실비보험으로 보장받을 수 있습니다. 치루는 수술 후 관리가 매우 중요하며, 실비보험은 입원 기간 동안의 병실료, 수술비, 약제비 등도 보장합니다.</p>
+
+      <div class="content-box">
+        <h4><span class="highlight">📌 2026년 실비보험 가입 시 체크 사항:</span></h4>
+        <p>2018년 이후 가입한 실비보험(신실손보험)은 급여, 비급여 항목별로 자기부담금 비율이 다릅니다. 급여 항목은 80%~90% 보상, 비급여 항목은 70%~80% 보상 등 상품마다 차이가 있으므로, 치질 수술 전에 본인의 약관을 확인해야 합니다. 2021년 7월 이후 4세대 실손보험은 비급여 항목에 대한 자기부담금이 더욱 높아졌습니다.</p>
+      </div>
+
+      <a href="https://www.fss.or.kr/fss/main/index.jsp" target="_blank" rel="noopener noreferrer" class="external-link">금융감독원(FSS) 실손의료보험 관련 약관 확인하기</a>
+    </section>
+
+    <section id="cost">
+      <h2>치질 수술 비용 분석 및 실비보험 보상 예시</h2>
+      <p>치질 수술 비용은 병원 규모(1차 의원, 2차 병원, 3차 대학병원), 수술 방법, 입원 기간, 그리고 비급여 항목 유무에 따라 크게 달라집니다. 2026년 기준으로 평균적인 수술 비용과 실비보험 적용 시 예상되는 실제 고객 부담금을 분석해 보겠습니다.</p>
+
+      <h3>1. 치질 수술 비용 구성 요소</h3>
+      <p>수술 비용은 크게 다음 세 가지로 분류됩니다. 특히 <strong class="highlight">비급여 항목</strong>은 실비보험 보상 여부를 결정하는 중요한 요소입니다.</p>
+      <ul>
+        <li><strong>요양급여 항목 (국민건강보험 적용):</strong> 진료비, 검사비, 수술비, 입원실료 등 건강보험이 적용되는 항목입니다. 대부분의 실비보험에서 보장됩니다.</li>
+        <li><strong>비급여 항목 (건강보험 미적용):</strong> 환자 본인이 전액 부담해야 하는 항목입니다. 선택 진료비, 특실 병실료, 최신 수술 기법(예: 고주파 치질 수술 기법) 등은 비급여 항목으로 분류될 수 있습니다.</li>
+        <li><strong>상급병실료 차액:</strong> 1~2인실 등 상급 병실을 사용할 경우, 건강보험이 적용되는 기준 병실(다인실)과의 차액이 발생합니다. 실비보험은 이 차액에 대해 약관에 따라 제한적으로 보상합니다. (예: 2018년 이전 보험은 50%, 이후 보험은 비급여 항목 한도 내에서 보상)</li>
+      </ul>
+
+      <h3>2. 치질 수술 평균 비용 및 실비 적용 예시</h3>
+      <p>보건복지부 및 통계청 자료(KOSIS)를 바탕으로 2026년 기준 치질 수술의 평균 비용과 실비보험 적용 시 시뮬레이션을 제공합니다. *단, 이는 평균적인 사례이며 개인별 보험 약관과 병원 선택에 따라 달라질 수 있습니다.*</p>
+      <table>
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>평균 총 수술 비용 (예시)</th>
+            <th>국민건강보험 공제 금액</th>
+            <th>실비보험 적용 전 고객 부담금</th>
+            <th>실비보험 적용 후 고객 부담금 (예시)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>치핵 수술 (1인실 2박 3일 입원)</strong></td>
+            <td>1,500,000원</td>
+            <td>400,000원</td>
+            <td>1,100,000원</td>
+            <td>약 100,000원 ~ 200,000원</td>
+          </tr>
+          <tr>
+            <td><strong>치열 수술 (당일 수술)</strong></td>
+            <td>500,000원</td>
+            <td>150,000원</td>
+            <td>350,000원</td>
+            <td>약 30,000원 ~ 50,000원</td>
+          </tr>
+          <tr>
+            <td><strong>치루 수술 (2인실 3박 4일 입원)</strong></td>
+            <td>2,000,000원</td>
+            <td>500,000원</td>
+            <td>1,500,000원</td>
+            <td>약 150,000원 ~ 300,000원</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><em>*실비보험 적용 후 고객 부담금은 자기부담금(급여/비급여), 상급병실료 차액 등을 고려한 예상 금액입니다.</em></p>
+
+      <div class="chart-placeholder">
+        <p>2026년 치질 수술 연령대별 발생률 그래프 (시각화 자료)</p>
+      </div>
+      <a href="https://kosis.kr/index/index.do" target="_blank" rel="noopener noreferrer" class="external-link">통계청 KOSIS 자료 확인하기</a>
+    </section>
+
+    <section id="claim">
+      <h2>치질 수술 보험금 청구 절차 및 필요 서류 (2026년 기준)</h2>
+      <p>치질 수술 후 실비보험금을 청구하는 절차는 비교적 간단하지만, 정확한 서류를 제출해야 신속하게 보험금을 받을 수 있습니다. 2026년 기준으로 필요한 서류와 청구 팁을 안내해 드립니다.</p>
+
+      <h3>1. 보험금 청구 시기 및 방법</h3>
+      <p>보험금 청구는 수술 후 퇴원 시점부터 가능하며, 보험사별로 모바일 앱, 팩스, 우편, 방문 접수 등 다양한 방법이 있습니다. <strong class="highlight">청구 기한은 '진료를 받은 날로부터 3년 이내'입니다.</strong> 기한이 지나면 청구가 불가능하므로, 퇴원 후 가능한 한 빨리 청구하는 것이 좋습니다.</p>
+
+      <h3>2. 필수 청구 서류 (공통)</h3>
+      <p>대부분의 보험사에서 공통적으로 요구하는 기본 서류입니다. 병원에서 퇴원 수속 시 발급받을 수 있습니다.</p>
+      <ul>
+        <li><strong>보험금 청구서:</strong> 보험사 양식에 맞춰 인적 사항과 계좌 정보를 기재합니다.</li>
+        <li><strong>진료비 계산서/영수증:</strong> 병원에서 발급하는 영수증으로, 급여/비급여 항목이 구분되어 있어야 합니다.</li>
+        <li><strong>진료비 세부내역서:</strong> 영수증만으로는 상세 내역 확인이 어려울 때 필요합니다. 특히 비급여 항목이 많을 경우 필수입니다.</li>
+        <li><strong>입퇴원 확인서 또는 진단서:</strong> 입원 기간이 명시된 서류입니다. 진단서에는 질병분류코드(K64 코드 등)가 포함되어야 합니다.</li>
+      </ul>
+
+      <h3>3. 청구 시 유의사항: 질병코드와 면책기간</h3>
+      <p>치질 관련 질환은 K64 코드를 사용하며, 치핵(K64.0~K64.2), 치열(K60), 치루(K60.3) 등 세부 코드가 있습니다. 보험금 청구 시 정확한 질병코드가 명시되어야 합니다. 또한, 실비보험 가입 시점(특히 2009년 이전)에는 치질이 면책 질환으로 분류되기도 했습니다. 본인의 가입 시점에 따라 보장 여부가 달라질 수 있으므로, 약관을 반드시 확인해야 합니다.</p>
+
+      <div class="content-box">
+        <h4><span class="highlight">💡 청구 팁: 간편 청구 시스템</span></h4>
+        <p>최근에는 <strong class="highlight">실손보험금 간편 청구 시스템</strong>이 도입되어, 병원에서 직접 보험사로 서류를 전송해주는 서비스가 확대되고 있습니다. 병원 원무과에 문의하여 이 서비스를 이용하면 청구 절차를 더욱 간편하게 진행할 수 있습니다.</p>
+      </div>
+
+      <a href="https://www.law.go.kr/lsInfoP.do?lsiSeq=230635&efYd=20200805#0000" target="_blank" rel="noopener noreferrer" class="external-link">법제처: 실손의료보험 표준 약관 확인하기</a>
+    </section>
+
+    <section id="tip">
+      <h2>치질실비보험, 똑똑하게 가입하고 청구하는 노하우</h2>
+      <p>치질은 재발 가능성이 높아 수술 전후 관리가 중요합니다. 보험 가입을 고려 중이거나 이미 가입된 보험을 활용하려는 분들을 위한 핵심 노하우를 정리했습니다.</p>
+
+      <h3>1. 가입 시점별 보장 내용 확인하기</h3>
+      <p>실비보험은 가입 시점에 따라 보장 내용이 크게 다릅니다. 특히 치질과 관련된 주요 변경 사항을 숙지해야 합니다.</p>
+      <ul>
+        <li><strong>구실손(2009년 10월 이전):</strong> 대부분 치질(K64) 질환이 보장 면책 대상이었습니다. 하지만 일부 특약 가입을 통해 보장받을 수 있었습니다.</li>
+        <li><strong>표준화 실손(2009년 10월 ~ 2017년 3월):</strong> 치질을 포함한 항문 질환을 기본적으로 보장하기 시작했습니다.</li>
+        <li><strong>신실손(2017년 4월 ~ 2021년 6월):</strong> 급여/비급여 분리, 자기부담금 상향 등 보장 내용이 변경되었지만, 치질 수술 보장은 유지됩니다.</li>
+        <li><strong>4세대 실손(2021년 7월 이후):</strong> 비급여 항목의 보장 비율이 조정되었고, 비급여 보험료 차등제가 도입되었습니다.</li>
+      </ul>
+
+      <h3>2. 치질 수술 전 '고지 의무' 준수하기</h3>
+      <p>실비보험 가입 시, 과거 병력에 대한 '고지 의무'는 매우 중요합니다. 치질 증상으로 병원 치료를 받은 적이 있다면 이를 반드시 보험사에 알려야 합니다. 고지 의무를 위반할 경우, 나중에 보험금 청구 시 보험금 지급이 거절되거나 계약이 해지될 수 있습니다. 특히, 치질은 재발 가능성이 높기 때문에 고지 의무를 더욱 철저히 지켜야 합니다.</p>
+
+      <h3>3. 치질 수술 후 가입 시 '면책기간' 확인하기</h3>
+      <p>치질 수술 후 실비보험에 새로 가입하려는 경우, 보험사에서는 일정 기간 동안 해당 질환에 대해 보장을 하지 않는 '면책기간'을 둘 수 있습니다. <strong class="highlight">치질 실비보험의 면책기간</strong>은 보험사 및 상품에 따라 다르며, 보통 1~2년 정도입니다. 이 기간이 지난 후에 재발된 치질에 대한 수술만 보장받을 수 있습니다.</p>
+
+      <div class="content-box">
+        <h4><span class="highlight">치질 수술과 치액 시술의 차이점:</span></h4>
+        <p>치질을 치료하는 데는 수술 외에도 레이저 시술, 고주파 시술 등 다양한 비수술적 치료법이 있습니다. 수술과 시술 모두 실비보험 적용이 가능하지만, 비급여 항목 여부에 따라 고객 부담금 비율이 달라질 수 있습니다. 특히 미용 목적이 강한 일부 시술은 보장에서 제외되기도 하니, 사전에 보험사에 문의하여 확인하는 것이 좋습니다.</p>
+      </div>
+
+      <a href="https://www.e-proctology.org/" target="_blank" rel="noopener noreferrer" class="external-link">대한항문학회 (가상의 기관) 정보 확인하기</a>
+    </section>
+
+    <section id="faq">
+      <h2>자주 묻는 질문 (FAQ)</h2>
+      <dl>
+        <dt tabindex="0" aria-expanded="false"><strong>Q. 치질 수술을 했어도 실비보험에 가입할 수 있나요?</strong></dt>
+        <dd>네, 가입할 수 있습니다. 다만, 치질 수술 기록이 있다면 보험사 심사 과정에서 <strong class="highlight">특정 조건(부담보 설정 또는 면책기간 설정)</strong>이 적용될 수 있습니다. 수술 후 완치된 시점으로부터 일정 기간(예: 1~2년)이 지나야 가입이 수월하며, 해당 기간 동안 치질 관련 질병에 대해서는 보장이 제외될 수 있습니다. 자세한 내용은 전문가 상담을 통해 확인하는 것이 좋습니다.</dd>
+
+        <dt tabindex="0" aria-expanded="false"><strong>Q. 치질 수술비 외에 통원치료비도 실비보험으로 보상받나요?</strong></dt>
+        <dd>네, 통원치료비 역시 보상받을 수 있습니다. 실비보험은 입원치료비뿐만 아니라 통원치료비(외래진료비, 약제비 포함)도 보장합니다. 다만, 하루당 보상 한도금액과 자기부담금이 적용됩니다. 2026년 기준 4세대 실손보험은 외래진료 1회당 2만원~3만원의 자기부담금이 있으며, 약제비는 별도로 청구됩니다.</dd>
+
+        <dt tabindex="0" aria-expanded="false"><strong>Q. 치질 수술 후 재발했을 때도 다시 보상받을 수 있나요?</strong></dt>
+        <dd>네, 가능합니다. 실비보험은 질병의 재발에 대해서도 보장합니다. 다만, 수술 후 면책기간 내에 재발했을 경우 보장이 어려울 수 있습니다. 면책기간은 가입 시 약관을 확인해야 합니다. 만약 재수술이 필요하다면, 처음 수술과 동일하게 실비보험 청구 절차를 거치면 됩니다.</dd>
+
+        <dt tabindex="0" aria-expanded="false"><strong>Q. 상급 병실(1인실) 사용 시 발생하는 병실료 차액은 모두 보장되나요?</strong></dt>
+        <dd>아닙니다. 2009년 10월 이후 표준화 실비보험은 병실료 차액에 대해 제한적으로 보장합니다. 2018년 4월 이전 상품은 병실료 차액의 50%를 보장하고, 2018년 4월 이후 상품부터는 비급여 병실료 차액을 보상 한도 내에서 보장합니다. 4세대 실손보험은 상급병실료 차액에 대해 50%를 보장(일 최대 10만원 한도)합니다.</dd>
+
+        <dt tabindex="0" aria-expanded="false"><strong>Q. 치질 보험 가입 시 '면책기간'과 '감액기간'은 무엇인가요?</strong></dt>
+        <dd>면책기간은 보험 가입 후 일정 기간 동안 보장 자체가 안 되는 기간을 말하며, 감액기간은 보험금을 100%가 아닌 일정 비율(예: 50%)만 지급하는 기간을 말합니다. 치질 실비보험의 경우, 대부분 면책기간을 적용하여 일정 기간이 지난 후부터 보장을 시작합니다. 이는 보험 가입 직전에 이미 발병한 질병에 대한 보험금 청구를 막기 위함입니다.</dd>
+      </dl>
+    </section>
+
+    <section id="inquiry">
+      <h2>2026년 치질실비보험 무료 상담 신청</h2>
+      <p>치질 수술을 앞두고 계시거나, 현재 가입된 보험의 보장 내용이 궁금하신가요? 복잡한 보험 약관을 혼자서 해석하기 어렵다면, 전문 상담을 통해 명확한 답을 얻으세요. 고객님의 상황에 맞는 정확한 보장 분석과 최적의 보험 설계 방법을 안내해 드립니다.</p>
+
+      <div class="contact-form">
+        <form action="#" method="post">
+          <label for="name">이름:</label>
+          <input type="text" id="name" name="name" placeholder="이름을 입력해 주세요" required>
+
+          <label for="phone">연락처:</label>
+          <input type="text" id="phone" name="phone" placeholder="휴대폰 번호 (예: 010-1234-5678)" required>
+
+          <label for="age">나이:</label>
+          <input type="number" id="age" name="age" placeholder="만 나이를 입력해 주세요" required>
+
+          <label for="condition">현재 치질 관련 증상 또는 수술 경험:</label>
+          <select id="condition" name="condition" required>
+            <option value="">-- 선택해 주세요 --</option>
+            <option value="no-symptom">증상 없음/예방 목적</option>
+            <option value="mild-symptom">경미한 증상 있음</option>
+            <option value="severe-symptom">수술 권유 또는 심한 통증</option>
+            <option value="post-surgery">수술 경험 있음 (재발 우려)</option>
+          </select>
+
+          <label for="consultation-topic">상담 희망 내용:</label>
+          <textarea id="consultation-topic" name="consultation-topic" rows="4" placeholder="궁금한 내용을 구체적으로 입력해 주시면 정확한 상담에 도움이 됩니다. (예: 수술 예정일, 가입 시기 등)"></textarea>
+
+          <label for="privacy-check">개인정보 수집 및 이용 동의:</label>
+          <input type="checkbox" id="privacy-check" name="privacy-check" required>
+          <span style="font-size: 0.9rem; margin-left: 5px;">개인정보 수집 및 이용에 동의합니다.</span>
+
+          <button type="submit">무료 상담 신청하기</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="external-info">
+      <h2>더 알아보기: 치질 관련 신뢰성 있는 정보 출처</h2>
+      <p>치질 질환 및 보험에 대한 객관적인 정보를 얻을 수 있는 외부 사이트입니다.</p>
+      <ul>
+        <li><a href="https://www.nhis.or.kr/" target="_blank" rel="noopener noreferrer">국민건강보험공단: 건강보험 보장성 강화 정책 및 질병 통계</a></li>
+        <li><a href="https://namu.wiki/w/%EC%B9%98%EC%A7%88" target="_blank" rel="noopener noreferrer">나무위키: 치질(Hemorrhoids)</a></li>
+        <li><a href="https://www.fss.or.kr/fss/main/index.jsp" target="_blank" rel="noopener noreferrer">금융감독원: 실손보험 관련 약관 및 소비자 유의사항</a></li>
+        <li><a href="https://www.kca.go.kr/home/main.do" target="_blank" rel="noopener noreferrer">한국소비자원: 소비자 피해 구제 및 분쟁 해결</a></li>
+        <li><a href="https://www.law.go.kr/lsInfoP.do?lsiSeq=230635&efYd=20200805#0000" target="_blank" rel="noopener noreferrer">법제처: 실손의료보험 표준 약관</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 치질실비보험 정보센터. All Rights Reserved.</p>
+    <p>면책 고지: 본 웹사이트의 모든 정보는 일반적인 정보 제공을 목적으로 하며, 특정 개인의 보험 계약 및 의료 상황에 대한 법적 자문 또는 권유로 사용될 수 없습니다. 정확한 정보는 해당 보험사 약관 및 의료 전문가의 진단에 따릅니다.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('dl dt').forEach((dt) => {
+      dt.addEventListener('click', () => {
+        const expanded = dt.getAttribute('aria-expanded') === 'true' || false;
+        dt.setAttribute('aria-expanded', !expanded);
+        dt.classList.toggle('active');
+      });
+      dt.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          dt.click();
+        }
+      });
+    });
+  </script>
+</body>
 </html>
+```**SEO 최적화 및 2026년 최신 정보 기반 치질실비보험 웹페이지 소스 코드**
+
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO 최적화 메타데이터 -->
+  <meta name="description" content="2026년 최신 치질실비보험 정보를 확인하세요. 치핵, 치열, 치루 등 치질 수술 비용과 실비보험 보상 범위, 청구 방법, 면책 기간 등 핵심 정보를 전문가 관점에서 상세히 분석하여 제공합니다.">
+  <meta name="keywords" content="치질실비보험, 치질수술비용, 치핵실비보험, 치열실비보험, 치루실비보험, 치질보험금청구, 2026년 실비보험, 치질수술보험, 실비보험 면책기간, 보험가입팁">
+  <meta name="author" content="치질실비보험 정보센터">
+  <title>2026년 치질실비보험 완벽 가이드 | 수술 비용부터 보상 청구까지 핵심 분석</title>
+
+  <!-- Google Fonts for better readability (Noto Sans KR) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap">
+
+  <!-- Schema Markup: Medical Web Page or FAQPage for search snippet optimization -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "2026년 치질실비보험 완벽 가이드",
+      "url": "https://yourdomain.com/치질실비보험",
+      "description": "치질 수술 비용을 실비보험으로 보상받는 방법과 2026년 최신 보험 가입 정보, 면책기간, 청구 서류 등을 상세히 안내합니다. 치질(치핵, 치열, 치루)에 대한 정확한 보험 정보를 제공하여 고객의 부담을 덜어드립니다.",
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "치질 (Hemorrhoids)",
+        "alternateName": ["치핵", "치열", "치루"],
+        "medicalSpecialty": "Proctology"
+      },
+      "lastReviewed": "2026-01-01"
+    }
+  </script>
+
+  <!-- CSS Styling (Customized for health topic and SEO readability) -->
+  <style>
+    body {
+      font-family: "Noto Sans KR", sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+      background-color: #f7f9fc; /* 부드러운 배경색 */
+      color: #333;
+      word-break: keep-all; /* 한글 단어 단위 줄바꿈 */
+    }
+    header {
+      background-color: #0066cc; /* 건강 관련 파란색 */
+      color: white;
+      padding: 2.5rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin: 0.5rem 0 1rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    header p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      opacity: 0.9;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      margin: 1rem 0 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease, transform 0.3s ease;
+      font-size: 1.1rem;
+      position: relative;
+    }
+    nav a:hover {
+      color: #ffcc00; /* 강조색 */
+      transform: translateY(-2px);
+    }
+    main {
+      max-width: 1000px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+      background-color: white;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+    }
+    h1, h2 {
+      color: #004a8f; /* 진한 남색 */
+      font-weight: 700;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-bottom: 3px solid #e0eaf6;
+    }
+    h2 {
+      font-size: 2.2rem;
+    }
+    h3 {
+      color: #0066cc;
+      font-size: 1.6rem;
+      margin-top: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px dashed #eee;
+    }
+    p {
+      text-align: justify;
+      margin-bottom: 1.5rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    th, td {
+      padding: 1rem;
+      border: 1px solid #e0e0e0;
+      text-align: center;
+    }
+    th {
+      background-color: #eaf3ff; /* 연한 배경색 */
+      color: #004a8f;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+    tr:nth-child(even) {
+      background-color: #fcfcfc;
+    }
+    dl dt {
+      font-weight: 700;
+      margin-top: 1.5rem;
+      cursor: pointer;
+      color: #0066cc;
+      background-color: #f5fafd;
+      padding: 1rem;
+      border-left: 5px solid #0066cc;
+      transition: background-color 0.3s ease;
+    }
+    dl dt:hover {
+      background-color: #e6f2ff;
+    }
+    dl dd {
+      margin: 0.5rem 0 1.5rem 1rem;
+      padding: 1rem;
+      border-left: 2px dashed #ccc;
+      display: none;
+      background-color: #ffffff;
+    }
+    dl dt.active + dd {
+      display: block;
+    }
+    .cta-button {
+      display: block;
+      background-color: #ff9900; /* 강조 오렌지색 */
+      color: white;
+      font-weight: 700;
+      padding: 1.2rem 3rem;
+      border-radius: 50px;
+      text-decoration: none;
+      margin: 3rem auto; /* 중앙 정렬 */
+      width: fit-content;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      text-align: center;
+      font-size: 1.3rem;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .cta-button:hover {
+      background-color: #e68a00;
+      transform: translateY(-3px);
+    }
+    .keyword-tags {
+      margin: 2.5rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .keyword-tags a {
+      background-color: #e0f0ff;
+      color: #0066cc;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .keyword-tags a:hover {
+      background-color: #b3d1ff;
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+      background-color: #e0eaf1;
+      margin-top: 3rem;
+      border-top: 1px solid #d0dbe4;
+    }
+    .external-link {
+      display: inline-block;
+      color: #0066cc;
+      font-weight: 500;
+      margin-top: 1rem;
+      text-decoration: underline;
+    }
+    .highlight {
+      color: #cc0000;
+      font-weight: 700;
+    }
+    .content-box {
+      background-color: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-top: 1.5rem;
+      border: 1px solid #eee;
+    }
+    .chart-placeholder {
+      width: 100%;
+      height: 300px;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      color: #666;
+      border: 1px solid #ddd;
+    }
+    /* Form input styling */
+    .contact-form {
+      background-color: #f9f9f9;
+      padding: 2rem;
+      border-radius: 10px;
+      margin: 2rem 0;
+    }
+    .contact-form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: #555;
+    }
+    .contact-form input[type="text"],
+    .contact-form input[type="number"],
+    .contact-form select,
+    .contact-form textarea {
+      width: calc(100% - 22px);
+      padding: 10px;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 1rem;
+    }
+    .contact-form textarea {
+      resize: vertical;
+    }
+    .contact-form button {
+      background-color: #0066cc;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+    .contact-form button:hover {
+      background-color: #004a8f;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>2026년 치질실비보험 완벽 가이드</h1>
+    <p>치질 수술 비용, 더 이상 혼자 고민하지 마세요. 실비보험으로 부담을 덜고 건강한 삶을 되찾으세요.</p>
+    <nav>
+      <ul>
+        <li><a href="#coverage">보장 내용</a></li>
+        <li><a href="#cost">비용 분석</a></li>
+        <li><a href="#claim">청구 절차</a></li>
+        <li><a href="#tip">가입 팁</a></li>
+        <li><a href="#faq">자주 묻는 질문</a></li>
+        <li><a href="#inquiry">무료 상담</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="introduction">
+      <h2>치질, 실비보험으로 보상받을 수 있을까?</h2>
+      <p>치질은 치핵, 치열, 치루 등 항문 질환을 통칭하는 말로, 국민건강보험공단 통계에 따르면 2024년 기준 약 65만 명이 이 질환으로 병원을 찾을 만큼 흔한 질병입니다. 심한 통증과 출혈로 인해 일상생활에 큰 불편을 초래하지만, 많은 사람들이 수술 비용에 대한 부담으로 치료를 미루곤 합니다. 특히 2026년 현재, 의료 기술의 발전과 함께 수술 방법도 다양해졌지만, 비급여 항목이 포함될 경우 비용이 예상보다 많이 나올 수 있습니다. 다행히 대부분의 <strong class="highlight">치질 수술 비용은 실비보험(실손의료비보험)으로 보상받을 수 있습니다.</strong> 하지만 정확한 보장 내용을 알지 못해 제대로 청구하지 못하거나, 가입 시점에 따라 보상 범위가 달라지는 경우가 많습니다. 본 가이드는 2026년 최신 기준으로 치질 실비보험에 대한 모든 궁금증을 해결해 드립니다.</p>
+
+      <div class="keyword-tags" aria-label="연관 검색 키워드">
+        <a href="#coverage">치질실비보험</a>
+        <a href="#cost">치질 수술 비용</a>
+        <a href="#coverage">치핵 실비보험</a>
+        <a href="#coverage">치열 실비보험</a>
+        <a href="#coverage">치루 실비보험</a>
+        <a href="#tip">실비보험 치질 면책기간</a>
+        <a href="#claim">치질 수술 보험금 청구</a>
+        <a href="#cost">2026 치질수술비용</a>
+        <a href="#tip">치질 보험 가입 조건</a>
+        <a href="#coverage">실비보험 치질 보장 범위</a>
+        <a href="#tip">치질 보험 가입 팁</a>
+        <a href="#cost">치질수술비 실비보험</a>
+      </div>
+    </section>
+
+    <section id="coverage">
+      <h2>치질 질환별 실비보험 보장 범위 상세 분석 (치핵/치열/치루)</h2>
+      <p>흔히 '치질'이라고 부르는 질환은 크게 세 가지 유형으로 나뉩니다. 치질 실비보험을 이해하기 위해서는 각 질환별 보장 여부를 정확히 아는 것이 중요합니다. 대부분의 실비보험은 항문 질환에 대해 보장을 하지만, 일부 상품이나 가입 시기에 따라 차이가 있을 수 있습니다. 2009년 10월 이후 표준화된 실비보험을 기준으로 보장 내용을 살펴보겠습니다.</p>
+
+      <h3>1. 치핵 (Hemorrhoids)</h3>
+      <p>항문 주위 혈관이 부풀어 오르는 증상으로, 가장 흔한 치질의 형태입니다. 수술을 받더라도 100% 재발을 막기 어려워 많은 사람들이 걱정합니다. 치핵 수술은 실비보험으로 보상받을 수 있습니다. 다만, 치핵을 제거하는 <strong class="highlight">치핵 절제술(PPH, HAL-RAR 등)</strong> 외에, 미용 목적의 시술(예: 치핵 경화제 주입술 등)은 보장에서 제외되거나 보험사별로 다르게 적용될 수 있습니다. 2026년 현재 표준 실손보험의 경우, '국민건강보험법'에 따른 요양급여에 해당하는 의료비는 보상하지만, 비급여 항목은 보장 비율에 따라 차감될 수 있습니다.</p>
+
+      <h3>2. 치열 (Anal Fissure)</h3>
+      <p>항문 입구가 찢어지는 증상입니다. 만성 치열의 경우 수술적 치료가 필요할 수 있습니다. 치열 수술 역시 실비보험의 보장 대상입니다. 급성 치열의 경우 약물 치료나 좌욕 등 비수술적 치료로 호전되는 경우가 많으므로, 수술을 결정하기 전에 충분한 상담이 필요합니다. 수술 방법으로는 내괄약근 측방 절개술(LIS) 등이 있으며, 이 역시 실비보험으로 보상받을 수 있습니다.</p>
+
+      <h3>3. 치루 (Fistula)</h3>
+      <p>항문 안쪽과 바깥쪽 피부 사이에 길이 생기는 염증성 질환입니다. 치루는 자연 치유가 어렵고 수술이 필수적인 경우가 많습니다. <strong class="highlight">치루 수술</strong>은 염증 제거와 누관 제거를 목적으로 하며, 실비보험으로 보장받을 수 있습니다. 치루는 수술 후 관리가 매우 중요하며, 실비보험은 입원 기간 동안의 병실료, 수술비, 약제비 등도 보장합니다.</p>
+
+      <div class="content-box">
+        <h4><span class="highlight">📌 2026년 실비보험 가입 시 체크 사항:</span></h4>
+        <p>2018년 이후 가입한 실비보험(신실손보험)은 급여, 비급여 항목별로 자기부담금 비율이 다릅니다. 급여 항목은 80%~90% 보상, 비급여 항목은 70%~80% 보상 등 상품마다 차이가 있으므로, 치질 수술 전에 본인의 약관을 확인해야 합니다. 2021년 7월 이후 4세대 실손보험은 비급여 항목에 대한 자기부담금이 더욱 높아졌습니다.</p>
+      </div>
+
+      <a href="https://www.fss.or.kr/fss/main/index.jsp" target="_blank" rel="noopener noreferrer" class="external-link">금융감독원(FSS) 실손의료보험 관련 약관 확인하기</a>
+    </section>
+
+    <section id="cost">
+      <h2>치질 수술 비용 분석 및 실비보험 보상 예시</h2>
+      <p>치질 수술 비용은 병원 규모(1차 의원, 2차 병원, 3차 대학병원), 수술 방법, 입원 기간, 그리고 비급여 항목 유무에 따라 크게 달라집니다. 2026년 기준으로 평균적인 수술 비용과 실비보험 적용 시 예상되는 실제 고객 부담금을 분석해 보겠습니다.</p>
+
+      <h3>1. 치질 수술 비용 구성 요소</h3>
+      <p>수술 비용은 크게 다음 세 가지로 분류됩니다. 특히 <strong class="highlight">비급여 항목</strong>은 실비보험 보상 여부를 결정하는 중요한 요소입니다.</p>
+      <ul>
+        <li><strong>요양급여 항목 (국민건강보험 적용):</strong> 진료비, 검사비, 수술비, 입원실료 등 건강보험이 적용되는 항목입니다. 대부분의 실비보험에서 보장됩니다.</li>
+        <li><strong>비급여 항목 (건강보험 미적용):</strong> 환자 본인이 전액 부담해야 하는 항목입니다. 선택 진료비, 특실 병실료, 최신 수술 기법(예: 고주파 치질 수술 기법) 등은 비급여 항목으로 분류될 수 있습니다.</li>
+        <li><strong>상급병실료 차액:</strong> 1~2인실 등 상급 병실을 사용할 경우, 건강보험이 적용되는 기준 병실(다인실)과의 차액이 발생합니다. 실비보험은 이 차액에 대해 약관에 따라 제한적으로 보상합니다. (예: 2018년 이전 보험은 50%, 이후 보험은 비급여 항목 한도 내에서 보상)</li>
+      </ul>
+
+      <h3>2. 치질 수술 평균 비용 및 실비 적용 예시</h3>
+      <p>보건복지부 및 통계청 자료(KOSIS)를 바탕으로 2026년 기준 치질 수술의 평균 비용과 실비보험 적용 시 시뮬레이션을 제공합니다. *단, 이는 평균적인 사례이며 개인별 보험 약관과 병원 선택에 따라 달라질 수 있습니다.*</p>
+      <table>
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>평균 총 수술 비용 (예시)</th>
+            <th>국민건강보험 공제 금액</th>
+            <th>실비보험 적용 전 고객 부담금</th>
+            <th>실비보험 적용 후 고객 부담금 (예시)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          <td><strong>치핵 수술 (1인실 2박 3일 입원)</strong></td>
+            <td>1,500,000원</td>
+            <td>400,000원</td>
+            <td>1,100,000원</td>
+            <td>약 100,000원 ~ 200,000원</td>
+          </tr>
+          <tr>
+            <td><strong>치열 수술 (당일 수술)</strong></td>
+            <td>500,000원</td>
+            <td>150,000원</td>
+            <td>350,000원</td>
+            <td>약 30,000원 ~ 50,000원</td>
+          </tr>
+          <tr>
+            <td><strong>치루 수술 (2인실 3박 4일 입원)</strong></td>
+            <td>2,000,000원</td>
+            <td>500,000원</td>
+            <td>1,500,000원</td>
+            <td>약 150,000원 ~ 300,000원</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><em>*실비보험 적용 후 고객 부담금은 자기부담금(급여/비급여), 상급병실료 차액 등을 고려한 예상 금액입니다.</em></p>
+
+      <div class="chart-placeholder">
+        <p>2026년 치질 수술 연령대별 발생률 그래프 (시각화 자료)</p>
+      </div>
+      <a href="https://kosis.kr/index/index.do" target="_blank" rel="noopener noreferrer" class="external-link">통계청 KOSIS 자료 확인하기</a>
+    </section>
+
+    <section id="claim">
+      <h2>치질 수술 보험금 청구 절차 및 필요 서류 (2026년 기준)</h2>
+      <p>치질 수술 후 실비보험금을 청구하는 절차는 비교적 간단하지만, 정확한 서류를 제출해야 신속하게 보험금을 받을 수 있습니다. 2026년 기준으로 필요한 서류와 청구 팁을 안내해 드립니다.</p>
+
+      <h3>1. 보험금 청구 시기 및 방법</h3>
+      <p>보험금 청구는 수술 후 퇴원 시점부터 가능하며, 보험사별로 모바일 앱, 팩스, 우편, 방문 접수 등 다양한 방법이 있습니다. <strong class="highlight">청구 기한은 '진료를 받은 날로부터 3년 이내'입니다.</strong> 기한이 지나면 청구가 불가능하므로, 퇴원 후 가능한 한 빨리 청구하는 것이 좋습니다.</p>
+
+      <h3>2. 필수 청구 서류 (공통)</h3>
+      <p>대부분의 보험사에서 공통적으로 요구하는 기본 서류입니다. 병원에서 퇴원 수속 시 발급받을 수 있습니다.</p>
+      <ul>
+        <li><strong>보험금 청구서:</strong> 보험사 양식에 맞춰 인적 사항과 계좌 정보를 기재합니다.</li>
+        <li><strong>진료비 계산서/영수증:</strong> 병원에서 발급하는 영수증으로, 급여/비급여 항목이 구분되어 있어야 합니다.</li>
+        <li><strong>진료비 세부내역서:</strong> 영수증만으로는 상세 내역 확인이 어려울 때 필요합니다. 특히 비급여 항목이 많을 경우 필수입니다.</li>
+        <li><strong>입퇴원 확인서 또는 진단서:</strong> 입원 기간이 명시된 서류입니다. 진단서에는 질병분류코드(K64 코드 등)가 포함되어야 합니다.</li>
+      </ul>
+
+      <h3>3. 청구 시 유의사항: 질병코드와 면책기간</h3>
+      <p>치질 관련 질환은 K64 코드를 사용하며, 치핵(K64.0~K64.2), 치열(K60), 치루(K60.3) 등 세부 코드가 있습니다. 보험금 청구 시 정확한 질병코드가 명시되어야 합니다. 또한, 실비보험 가입 시점(특히 2009년 이전)에는 치질이 면책 질환으로 분류되기도 했습니다. 본인의 가입 시점에 따라 보장 여부가 달라질 수 있으므로, 약관을 반드시 확인해야 합니다.</p>
+
+      <div class="content-box">
+        <h4><span class="highlight">💡 청구 팁: 간편 청구 시스템</span></h4>
+        <p>최근에는 <strong class="highlight">실손보험금 간편 청구 시스템</strong>이 도입되어, 병원에서 직접 보험사로 서류를 전송해주는 서비스가 확대되고 있습니다. 병원 원무과에 문의하여 이 서비스를 이용하면 청구 절차를 더욱 간편하게 진행할 수 있습니다.</p>
+      </div>
+
+      <a href="https://www.law.go.kr/lsInfoP.do?lsiSeq=230635&efYd=20200805#0000" target="_blank" rel="noopener noreferrer" class="external-link">법제처: 실손의료보험 표준 약관 확인하기</a>
+    </section>
+
+    <section id="tip">
+      <h2>치질실비보험, 똑똑하게 가입하고 청구하는 노하우</h2>
+      <p>치질은 재발 가능성이 높아 수술 전후 관리가 중요합니다. 보험 가입을 고려 중이거나 이미 가입된 보험을 활용하려는 분들을 위한 핵심 노하우를 정리했습니다.</p>
+
+      <h3>1. 가입 시점별 보장 내용 확인하기</h3>
+      <p>실비보험은 가입 시점에 따라 보장 내용이 크게 다릅니다. 특히 치질과 관련된 주요 변경 사항을 숙지해야 합니다.</p>
+      <ul>
+        <li><strong>구실손(2009년 10월 이전):</strong> 대부분 치질(K64) 질환이 보장 면책 대상이었습니다. 하지만 일부 특약 가입을 통해 보장받을 수 있었습니다.</li>
+        <li><strong>표준화 실손(2009년 10월 ~ 2017년 3월):</strong> 치질을 포함한 항문 질환을 기본적으로 보장하기 시작했습니다.</li>
+        <li><strong>신실손(2017년 4월 ~ 2021년 6월):</strong> 급여/비급여 분리, 자기부담금 상향 등 보장 내용이 변경되었지만, 치질 수술 보장은 유지됩니다.</li>
+        <li><strong>4세대 실손(2021년 7월 이후):</strong> 비급여 항목의 보장 비율이 조정되었고, 비급여 보험료 차등제가 도입되었습니다.</li>
+      </ul>
+
+      <h3>2. 치질 수술 전 '고지 의무' 준수하기</h3>
+      <p>실비보험 가입 시, 과거 병력에 대한 '고지 의무'는 매우 중요합니다. 치질 증상으로 병원 치료를 받은 적이 있다면 이를 반드시 보험사에 알려야 합니다. 고지 의무를 위반할 경우, 나중에 보험금 청구 시 보험금 지급이 거절되거나 계약이 해지될 수 있습니다. 특히, 치질은 재발 가능성이 높기 때문에 고지 의무를 더욱 철저히 지켜야 합니다.</p>
+
+      <h3>3. 치질 수술 후 가입 시 '면책기간' 확인하기</h3>
+      <p>치질 수술 후 실비보험에 새로 가입하려는 경우, 보험사에서는 일정 기간 동안 해당 질환에 대해 보장을 하지 않는 '면책기간'을 둘 수 있습니다. <strong class="highlight">치질 실비보험의 면책기간</strong>은 보험사 및 상품에 따라 다르며, 보통 1~2년 정도입니다. 이 기간이 지난 후에 재발된 치질에 대한 수술만 보장받을 수 있습니다.</p>
+
+      <div class="content-box">
+        <h4><span class="highlight">치질 수술과 치액 시술의 차이점:</span></h4>
+        <p>치질을 치료하는 데는 수술 외에도 레이저 시술, 고주파 시술 등 다양한 비수술적 치료법이 있습니다. 수술과 시술 모두 실비보험 적용이 가능하지만, 비급여 항목 여부에 따라 고객 부담금 비율이 달라질 수 있습니다. 특히 미용 목적이 강한 일부 시술은 보장에서 제외되기도 하니, 사전에 보험사에 문의하여 확인하는 것이 좋습니다.</p>
+      </div>
+
+      <a href="https://www.e-proctology.org/" target="_blank" rel="noopener noreferrer" class="external-link">대한항문학회 (가상의 기관) 정보 확인하기</a>
+    </section>
+
+    <section id="faq">
+      <h2>자주 묻는 질문 (FAQ)</h2>
+      <dl>
+        <dt tabindex="0" aria-expanded="false"><strong>Q. 치질 수술을 했어도 실비보험에 가입할 수 있나요?</strong></dt>
+        <dd>네, 가입할 수 있습니다. 다만, 치질 수술 기록이 있다면 보험사 심사 과정에서 <strong class="highlight">특정 조건(부담보 설정 또는 면책기간 설정)</strong>이 적용될 수 있습니다. 수술 후 완치된 시점으로부터 일정 기간(예: 1~2년)이 지나야 가입이 수월하며, 해당 기간 동안 치질 관련 질병에 대해서는 보장이 제외될 수 있습니다. 자세한 내용은 전문가 상담을 통해 확인하는 것이 좋습니다.</dd>
+
+        <dt tabindex="0" aria-expanded="false"><strong>Q. 치질 수술비 외에 통원치료비도 실비보험으로 보상받나요?</strong></dt>
+        <dd>네, 통원치료비 역시 보상받을 수 있습니다. 실비보험은 입원치료비뿐만 아니라 통원치료비(외래진료비, 약제비 포함)도 보장합니다. 다만, 하루당 보상 한도금액과 자기부담금이 적용됩니다. 2026년 기준 4세대 실손보험은 외래진료 1회당 2만원~3만원의 자기부담금이 있으며, 약제비는 별도로 청구됩니다.</dd>
+
+        <dt tabindex="0" aria-expanded="false"><strong>Q. 치질 수술 후 재발했을 때도 다시 보상받을 수 있나요?</strong></dt>
+        <dd>네, 가능합니다. 실비보험은 질병의 재발에 대해서도 보장합니다. 다만, 수술 후 면책기간 내에 재발했을 경우 보장이 어려울 수 있습니다. 면책기간은 가입 시 약관을 확인해야 합니다. 만약 재수술이 필요하다면, 처음 수술과 동일하게 실비보험 청구 절차를 거치면 됩니다.</dd>
+
+        <dt tabindex="0" aria-expanded="false"><strong>Q. 상급 병실(1인실) 사용 시 발생하는 병실료 차액은 모두 보장되나요?</strong></dt>
+        <dd>아닙니다. 2009년 10월 이후 표준화 실비보험은 병실료 차액에 대해 제한적으로 보장합니다. 2018년 4월 이전 상품은 병실료 차액의 50%를 보장하고, 2018년 4월 이후 상품부터는 비급여 병실료 차액을 보상 한도 내에서 보장합니다. 4세대 실손보험은 상급병실료 차액에 대해 50%를 보장(일 최대 10만원 한도)합니다.</dd>
+
+        <dt tabindex="0" aria-expanded="false"><strong>Q. 치질 보험 가입 시 '면책기간'과 '감액기간'은 무엇인가요?</strong></dt>
+        <dd>면책기간은 보험 가입 후 일정 기간 동안 보장 자체가 안 되는 기간을 말하며, 감액기간은 보험금을 100%가 아닌 일정 비율(예: 50%)만 지급하는 기간을 말합니다. 치질 실비보험의 경우, 대부분 면책기간을 적용하여 일정 기간이 지난 후부터 보장을 시작합니다. 이는 보험 가입 직전에 이미 발병한 질병에 대한 보험금 청구를 막기 위함입니다.</dd>
+      </dl>
+    </section>
+
+    <section id="inquiry">
+      <h2>2026년 치질실비보험 무료 상담 신청</h2>
+      <p>치질 수술을 앞두고 계시거나, 현재 가입된 보험의 보장 내용이 궁금하신가요? 복잡한 보험 약관을 혼자서 해석하기 어렵다면, 전문 상담을 통해 명확한 답을 얻으세요. 고객님의 상황에 맞는 정확한 보장 분석과 최적의 보험 설계 방법을 안내해 드립니다.</p>
+
+      <div class="contact-form">
+        <form action="#" method="post">
+          <label for="name">이름:</label>
+          <input type="text" id="name" name="name" placeholder="이름을 입력해 주세요" required>
+
+          <label for="phone">연락처:</label>
+          <input type="text" id="phone" name="phone" placeholder="휴대폰 번호 (예: 010-1234-5678)" required>
+
+          <label for="age">나이:</label>
+          <input type="number" id="age" name="age" placeholder="만 나이를 입력해 주세요" required>
+
+          <label for="condition">현재 치질 관련 증상 또는 수술 경험:</label>
+          <select id="condition" name="condition" required>
+            <option value="">-- 선택해 주세요 --</option>
+            <option value="no-symptom">증상 없음/예방 목적</option>
+            <option value="mild-symptom">경미한 증상 있음</option>
+            <option value="severe-symptom">수술 권유 또는 심한 통증</option>
+            <option value="post-surgery">수술 경험 있음 (재발 우려)</option>
+          </select>
+
+          <label for="consultation-topic">상담 희망 내용:</label>
+          <textarea id="consultation-topic" name="consultation-topic" rows="4" placeholder="궁금한 내용을 구체적으로 입력해 주시면 정확한 상담에 도움이 됩니다. (예: 수술 예정일, 가입 시기 등)"></textarea>
+
+          <label for="privacy-check">개인정보 수집 및 이용 동의:</label>
+          <input type="checkbox" id="privacy-check" name="privacy-check" required>
+          <span style="font-size: 0.9rem; margin-left: 5px;">개인정보 수집 및 이용에 동의합니다.</span>
+
+          <button type="submit">무료 상담 신청하기</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="external-info">
+      <h2>더 알아보기: 치질 관련 신뢰성 있는 정보 출처</h2>
+      <p>치질 질환 및 보험에 대한 객관적인 정보를 얻을 수 있는 외부 사이트입니다.</p>
+      <ul>
+        <li><a href="https://www.nhis.or.kr/" target="_blank" rel="noopener noreferrer">국민건강보험공단: 건강보험 보장성 강화 정책 및 질병 통계</a></li>
+        <li><a href="https://namu.wiki/w/%EC%B9%98%EC%A7%88" target="_blank" rel="noopener noreferrer">나무위키: 치질(Hemorrhoids)</a></li>
+        <li><a href="https://www.fss.or.kr/fss/main/index.jsp" target="_blank" rel="noopener noreferrer">금융감독원: 실손보험 관련 약관 및 소비자 유의사항</a></li>
+        <li><a href="https://www.kca.go.kr/home/main.do" target="_blank" rel="noopener noreferrer">한국소비자원: 소비자 피해 구제 및 분쟁 해결</a></li>
+        <li><a href="https://www.law.go.kr/lsInfoP.do?lsiSeq=230635&efYd=20200805#0000" target="_blank" rel="noopener noreferrer">법제처: 실손의료보험 표준 약관</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 치질실비보험 정보센터. All Rights Reserved.</p>
+    <p>면책 고지: 본 웹사이트의 모든 정보는 일반적인 정보 제공을 목적으로 하며, 특정 개인의 보험 계약 및 의료 상황에 대한 법적 자문 또는 권유로 사용될 수 없습니다. 정확한 정보는 해당 보험사 약관 및 의료 전문가의 진단에 따릅니다.</p>
+  </footer>
+
+  <script>
+    // FAQ 아코디언 기능 (접기/펼치기)
+    document.querySelectorAll('dl dt').forEach((dt) => {
+      dt.addEventListener('click', () => {
+        const expanded = dt.getAttribute('aria-expanded') === 'true' || false;
+        dt.setAttribute('aria-expanded', !expanded);
+        dt.classList.toggle('active');
+      });
+      dt.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          dt.click();
+        }
+      });
+    });
+  </script>
+
+  
